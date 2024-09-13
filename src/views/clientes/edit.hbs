@@ -1,0 +1,48 @@
+<div class="container p-4" style="margin-top:70px ;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">ACTUALIZAR VEHÍCULO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/edit/{{vehiculo.id}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="marca" class="input-group-text">Marca</label>
+                            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca del vehículo"
+                                value="{{vehiculo.marca}}" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="modelo" class="input-group-text">Modelo</label>
+                            <input class="form-control" type="text" name="modelo" id="modelo" placeholder="Modelo del vehículo"
+                                value="{{vehiculo.modelo}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="ano_fabricacion" class="input-group-text">Año de Fabricación</label>
+                            <input class="form-control" type="text" name="ano_fabricacion" id="ano_fabricacion"
+                                value="{{vehiculo.ano_fabricacion}}" placeholder="Año de fabricación" required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="placa" class="input-group-text">Placa</label>
+                            <input class="form-control" type="text" name="placa" id="placa" placeholder="Placa del vehículo"
+                                value="{{vehiculo.placa}}" required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="estado" class="input-group-text">Estado</label>
+                            <input class="form-control" type="text" name="estado" id="estado" placeholder="Estado del vehículo (Ej. Activo/Baja)"
+                                value="{{vehiculo.estado}}" required>
+                        </div>
+
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success"> Actualizar</button>
+                            <button class="btn btn-danger"><a class="nav-link  link-light" aria-current="page"
+                                    href="/list"> Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

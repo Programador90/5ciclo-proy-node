@@ -1,0 +1,63 @@
+<div class="container p-4" style="margin-top:70px ;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">AÑADIR TU VEHÍCULO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/add" method="post">
+                        <!-- Marca del Vehículo -->
+                        <div class="input-group mt-2">
+                            <label for="marca" class="input-group-text">Marca</label>
+                            <input class="form-control" type="text" name="marca" id="marca" placeholder="Marca del vehículo"
+                                autofocus required>
+                        </div>
+
+                        <!-- Modelo del Vehículo -->
+                        <div class="input-group mt-2">
+                            <label for="modelo" class="input-group-text">Modelo</label>
+                            <input class="form-control" type="text" name="modelo" id="modelo" placeholder="Modelo del vehículo"
+                                required>
+                        </div>
+
+                        <!-- Año de Fabricación -->
+                        <div class="input-group mt-2">
+                            <label for="ano_fabricacion" class="input-group-text">Año de Fabricación</label>
+                            <input class="form-control" type="text" name="ano_fabricacion" id="ano_fabricacion"
+                                placeholder="Año de fabricación" required>
+                        </div>
+
+                        <!-- Placa del Vehículo -->
+                        <div class="input-group mt-2">
+                            <label for="placa" class="input-group-text">Placa</label>
+                            <input class="form-control" type="text" name="placa" id="placa" placeholder="Placa del vehículo"
+                                required>
+                        </div>
+
+                        <!-- Fecha de Registro -->
+                        <div class="input-group mt-2">
+                            <label for="fecha_registro" class="input-group-text">Fecha de Registro</label>
+                            <input class="form-control" type="date" name="fecha_registro" id="fecha_registro" required>
+                        </div>
+
+                        <!-- Estado del Vehículo -->
+                        <div class="input-group mt-2">
+                            <label for="estado" class="input-group-text">Estado</label>
+                            <select class="form-control" id="estado" name="estado" required>
+                                <option value="activo">Activo</option>
+                                <option value="baja">Baja</option>
+                            </select>
+                        </div>
+
+                        <!-- Botones -->
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">Guardar</button>
+                            <a class="btn btn-danger nav-link link-light" href="/list">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
